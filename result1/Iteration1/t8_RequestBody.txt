@@ -1,3 +1,2 @@
-"advanceDiscount=0&depart=San+Francisco&departDate=05%2F04%2F2021&arrive=Seattle&returnDate=13%"
-"2F04%2F2021&numPassengers=1&seatPref=None&seatType=Business&.cgifields=roundtrip&.cgifields=se"
-"atType&.cgifields=seatPref&findFlights.x=64&findFlights.y=11"
+"3=on&flightID=41148912-818-JB&.cgifields=1&flightID=41160764-1587-JB&.cgifields=3&flightID=411"
+"766-23-IS&.cgifields=2&removeAllFlights.x=36&removeAllFlights.y=4"

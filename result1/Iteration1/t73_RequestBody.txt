@@ -1,4 +1,0 @@
-"firstName=Sergey&lastName=Petrov&address1=Oktyabrskaya&address2=4&pass1=Sergey+Petrov&creditCa"
-"rd=2222&expDate=02%2F23&oldCCOption=on&numPassengers=1&seatType=Coach&seatPref=Window&outbound"
-"Flight=472%3B565%3B05%2F04%2F2021&advanceDiscount=0&returnFlight=742%3B565%3B13%2F04%2F2021&JS"
-"FormSubmit=off&.cgifields=saveCC&buyFlights.x=49&buyFlights.y=14"

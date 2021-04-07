@@ -1,3 +1,0 @@
-"advanceDiscount=0&depart=San+Francisco&departDate=05%2F04%2F2021&arrive=Zurich&returnDate=13%2"
-"F04%2F2021&numPassengers=1&seatPref=Aisle&seatType=Coach&.cgifields=roundtrip&.cgifields=seatT"
-"ype&.cgifields=seatPref&findFlights.x=64&findFlights.y=11"

@@ -1,14 +1,6 @@
-checkAndDel(int countFirst)
+checkAndDel(int allAndOnce)
 {
-	int i,j,k, count;
-	char paramName[100];
-	
-	if (countFirst == 0) {
-		lr_output_message("Ѕилетов первого класса нет, удал€ть нечего");
-		return 0;
-	}
-	
-	j = rand()%countFirst + 1;
+	int i, count;
 	
 //	«аходим в Itinerary
 	web_reg_save_param_ex(
@@ -23,12 +15,6 @@ checkAndDel(int countFirst)
 	    "ord=all",
 	    LAST);
 		
-	web_reg_save_param_ex(
-		"ParamName=classesTicket",
-		"LB=A ",
-		"RB= class ticket",
-		"Ordinal=all",
-		LAST);
 	web_url("Itinerary Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
 		"TargetFrame=body", 
@@ -39,23 +25,11 @@ checkAndDel(int countFirst)
 		"Mode=HTML", 
 		LAST);
 
-    count = atoi(lr_eval_string("{classesTicket_count}"));
+    count = atoi(lr_eval_string("{flightIDs_count}"));
 
 //	собираем набор параметров дл€ удалени€
 	lr_save_string("","param");
-	k = 1;
-	for (i = 1; i <= count; i++)
-       {
-    		sprintf(paramName, "{classesTicket_%d}", i);
-
-       		if (strcmp(lr_eval_string(paramName),"First") == 0) {
-				if (k == j) {
-					lr_param_sprintf("param","%d=on&", i);
-					break;
-				}
-				k++;
-       		}
-       }	
+	lr_param_sprintf("param","%d=on&", count);
     
 	for(i = 1;i <= count; i++) {
         lr_param_sprintf("param",
@@ -72,7 +46,13 @@ checkAndDel(int countFirst)
 
 	}
 
-	lr_save_string(lr_eval_string("{param}removeFlights.x=36&removeFlights.y=4"), "c_wcr");
+	if (allAndOnce < 3) {
+		lr_save_string(lr_eval_string("{param}removeFlights.x=36&removeFlights.y=4"), "c_wcr");
+	}
+	else {
+		lr_save_string(lr_eval_string("{param}removeAllFlights.x=36&removeAllFlights.y=4"), "c_wcr");
+	}
+	
 		
     web_custom_request("itinerary.pl_2",
 	    "URL=http://localhost:1080/cgi-bin/itinerary.pl",

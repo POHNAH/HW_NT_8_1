@@ -1,4 +1,0 @@
-"firstName=Sergey&lastName=Ivanov&address1=Lenina&address2=3&pass1=Sergey+Ivanov&creditCard=111"
-"1&expDate=02%2F23&saveCC=on&oldCCOption=&numPassengers=1&seatType=Coach&seatPref=None&outbound"
-"Flight=270%3B565%3B05%2F04%2F2021&advanceDiscount=0&returnFlight=722%3B534%3B13%2F04%2F2021&JS"
-"FormSubmit=off&.cgifields=saveCC&buyFlights.x=49&buyFlights.y=14"

@@ -1,16 +1,12 @@
 logic()
 {
-	int j, n;
+	int allOrOnce = rand()%10;
+	vuser_init();
+	createTicket();
 	
-	n = atoi(lr_eval_string("{RandomBooking}"));
+	checkAndDel(allOrOnce);
+
+	vuser_end();
 	
-	for (j = 1; j<=n; j++)
-  {
-
-	lr_output_message("Eoa?aoey ?%d",j);
-
-		
-		Action1();
-  }
 	return 0;
 }

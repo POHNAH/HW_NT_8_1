@@ -1,4 +1,0 @@
-"firstName=Ivan&lastName=Sidorov&address1=Tverskaya&address2=2&pass1=Ivan+Sidorov&creditCard=33"
-"33&expDate=02%2F23&saveCC=on&oldCCOption=&numPassengers=1&seatType=First&seatPref=Window&outbo"
-"undFlight=720%3B1060%3B05%2F04%2F2021&advanceDiscount=0&returnFlight=273%3B867%3B13%2F04%2F202"
-"1&JSFormSubmit=off&.cgifields=saveCC&buyFlights.x=49&buyFlights.y=14"

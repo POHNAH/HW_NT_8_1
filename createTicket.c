@@ -11,10 +11,6 @@ createTicket()
 		"Mode=HTML", 
 		LAST);
 
-	lr_save_string(lr_eval_string("{city}"),"city1");
-	lr_output_message(lr_eval_string("{city1}"));
-	lr_save_string(lr_eval_string("{city}"),"city2");
-	lr_output_message(lr_eval_string("{city2}"));
 	lr_save_string(lr_eval_string("{seatPref}"),"sPref");
 	lr_output_message(lr_eval_string("{sPref}"));
 	lr_save_string(lr_eval_string("{seatType}"),"sType");
@@ -30,9 +26,9 @@ createTicket()
 		web_submit_form("reservations.pl", 
 			"Snapshot=t4.inf", 
 			ITEMDATA, 
-			"Name=depart", "Value={city1}", ENDITEM, 
+			"Name=depart", "Value={city}", ENDITEM, 
 			"Name=departDate", "Value={date1}", ENDITEM, 
-			"Name=arrive", "Value={city2}", ENDITEM, 
+			"Name=arrive", "Value={city}", ENDITEM, 
 			"Name=returnDate", "Value={date2}", ENDITEM, 
 			"Name=numPassengers", "Value=1", ENDITEM, 
 			"Name=roundtrip", "Value=<OFF>", ENDITEM, 
@@ -96,9 +92,9 @@ createTicket()
 		web_submit_form("reservations.pl", 
 			"Snapshot=t4.inf", 
 			ITEMDATA, 
-			"Name=depart", "Value={city1}", ENDITEM, 
+			"Name=depart", "Value={city}", ENDITEM, 
 			"Name=departDate", "Value={date1}", ENDITEM, 
-			"Name=arrive", "Value={city2}", ENDITEM, 
+			"Name=arrive", "Value={city}", ENDITEM, 
 			"Name=returnDate", "Value={date2}", ENDITEM, 
 			"Name=numPassengers", "Value=1", ENDITEM, 
 			"Name=roundtrip", "Value=on", ENDITEM, 
