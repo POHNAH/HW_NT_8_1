@@ -1,0 +1,10 @@
+<HTML>
+<HEAD>
+<title>Web Tours</title>
+<script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=d1oBVMTL_jPNWREgeIEGqTy8E-DyuFvpB1r9YQlvxNylAT618juVCfG9uulmuXIXqywiGoRx9STSLrk0ve8aAg" charset="UTF-8"></script><frameset rows = "65,*" border="1" bordercolor="#E0E7F1">
+<frame name="header" src="header.html" scrolling="no" noresize="noresize" marginheight="2" marginwidth="2"/>
+<frame name="body" src="/cgi-bin/welcome.pl?signOff=true" scrolling="auto" noresize="noresize" marginheight="2" marginwidth="2" />
+</frameset>
+</HEAD>
+</HTML>
+

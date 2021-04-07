@@ -1,0 +1,2 @@
+"outboundFlight=502%3B260%3B05%2F04%2F2021&returnFlight=051%3B245%3B13%2F04%2F2021&numPassenger"
+"s=1&advanceDiscount=0&seatType=Coach&seatPref=Aisle&reserveFlights.x=3&reserveFlights.y=10"
