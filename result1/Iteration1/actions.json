@@ -6,55 +6,43 @@
                 "stepId": "STEP1",
                 "stepName": "Url: webtours",
                 "infFile": "t1.inf",
-                "time": 1617820508138
+                "time": 1617877154411
             },
             {
                 "stepId": "STEP2",
                 "stepName": "Submit Form: login.pl",
                 "infFile": "t2.inf",
-                "time": 1617820508263
+                "time": 1617877154821
             },
             {
                 "stepId": "STEP3",
                 "stepName": "Url: welcome.pl",
                 "infFile": "t3.inf",
-                "time": 1617820508395
+                "time": 1617877155366
             },
             {
                 "stepId": "STEP4",
                 "stepName": "Submit Form: reservations.pl",
                 "infFile": "t4.inf",
-                "time": 1617820508471
+                "time": 1617877155772
             },
             {
                 "stepId": "STEP5",
                 "stepName": "Submit Form: reservations.pl_2",
                 "infFile": "t5.inf",
-                "time": 1617820508584
+                "time": 1617877156113
             },
             {
                 "stepId": "STEP6",
                 "stepName": "Submit Form: reservations.pl_3",
                 "infFile": "t6.inf",
-                "time": 1617820508688
+                "time": 1617877156547
             },
             {
                 "stepId": "STEP7",
                 "stepName": "Url: Itinerary Button",
                 "infFile": "t7.inf",
-                "time": 1617820522257
-            },
-            {
-                "stepId": "STEP8",
-                "stepName": "Custom Request: itinerary.pl_2",
-                "infFile": "t8.inf",
-                "time": 1617820522326
-            },
-            {
-                "stepId": "STEP9",
-                "stepName": "Url: SignOff Button",
-                "infFile": "t9.inf",
-                "time": 1617820522465
+                "time": 1617877157476
             }
         ],
         "transactions": []

@@ -1,2 +1,2 @@
-"outboundFlight=770%3B0%3B07%2F04%2F2021&numPassengers=1&advanceDiscount=0&seatType=Coach&seatP"
-"ref=Window&reserveFlights.x=3&reserveFlights.y=10"
+"outboundFlight=601%3B338%3B08%2F04%2F2021&numPassengers=1&advanceDiscount=0&seatType=First&sea"
+"tPref=Window&reserveFlights.x=3&reserveFlights.y=10"
