@@ -12,9 +12,9 @@ createTicket()
 		LAST);
 
 	lr_save_string(lr_eval_string("{seatPref}"),"sPref");
-	lr_output_message(lr_eval_string("{sPref}"));
+//	lr_output_message(lr_eval_string("{sPref}"));
 	lr_save_string(lr_eval_string("{seatType}"),"sType");
-	lr_output_message(lr_eval_string("{sType}"));
+//	lr_output_message(lr_eval_string("{sType}"));
 	
 	if (randomNumber == 0) {
 		web_reg_save_param_ex(
@@ -39,7 +39,7 @@ createTicket()
 			LAST);
 		
 		lr_save_string(lr_eval_string(lr_paramarr_random("outFlight")),"randomTicket");
-		lr_output_message(lr_eval_string("{randomTicket}"));
+//		lr_output_message(lr_eval_string("{randomTicket}"));
 	
 		web_submit_form("reservations.pl_2", 
 			"Snapshot=t5.inf", 
@@ -50,15 +50,15 @@ createTicket()
 			LAST);
 	
 		lr_save_string(lr_eval_string("{fName}"),"firstName");
-		lr_output_message(lr_eval_string("{firstName}"));
+//		lr_output_message(lr_eval_string("{firstName}"));
 		lr_save_string(lr_eval_string("{sName}"),"secondName");
-		lr_output_message(lr_eval_string("{secondName}"));
+//		lr_output_message(lr_eval_string("{secondName}"));
 		lr_save_string(lr_eval_string("{adress}"),"adr");
 		lr_save_string(lr_eval_string("{home}"),"hom");
-		lr_output_message("Adress %s, %s", lr_eval_string("{adr}"),lr_eval_string("{hom}"));
+//		lr_output_message("Adress %s, %s", lr_eval_string("{adr}"),lr_eval_string("{hom}"));
 		lr_save_string(lr_eval_string("{cCard}"),"creditCard");
 		lr_save_string(lr_eval_string("{cDate}"),"creditDate");
-		lr_output_message("Credit card %s, %s", lr_eval_string("{creditCard}"),lr_eval_string("{creditDate}"));
+//		lr_output_message("Credit card %s, %s", lr_eval_string("{creditCard}"),lr_eval_string("{creditDate}"));
 	
 		web_submit_form("reservations.pl_3", 
 			"Snapshot=t6.inf", 
@@ -105,9 +105,9 @@ createTicket()
 			LAST);
 		
 		lr_save_string(lr_eval_string(lr_paramarr_random("outFlight")),"randomTicket1");
-		lr_output_message(lr_eval_string("{randomTicket1}"));
+//		lr_output_message(lr_eval_string("{randomTicket1}"));
 		lr_save_string(lr_eval_string(lr_paramarr_random("returnFlight")),"randomTicket2");
-		lr_output_message(lr_eval_string("{randomTicket2}"));
+//		lr_output_message(lr_eval_string("{randomTicket2}"));
 	
 		web_submit_form("reservations.pl_2", 
 			"Snapshot=t5.inf", 
@@ -119,15 +119,15 @@ createTicket()
 			LAST);
 	
 		lr_save_string(lr_eval_string("{fName}"),"firstName");
-		lr_output_message(lr_eval_string("{firstName}"));
+//		lr_output_message(lr_eval_string("{firstName}"));
 		lr_save_string(lr_eval_string("{sName}"),"secondName");
-		lr_output_message(lr_eval_string("{secondName}"));
+//		lr_output_message(lr_eval_string("{secondName}"));
 		lr_save_string(lr_eval_string("{adress}"),"adr");
 		lr_save_string(lr_eval_string("{home}"),"hom");
-		lr_output_message("Adress %s, %s", lr_eval_string("{adr}"),lr_eval_string("{hom}"));
+//		lr_output_message("Adress %s, %s", lr_eval_string("{adr}"),lr_eval_string("{hom}"));
 		lr_save_string(lr_eval_string("{cCard}"),"creditCard");
 		lr_save_string(lr_eval_string("{cDate}"),"creditDate");
-		lr_output_message("Credit card %s, %s", lr_eval_string("{creditCard}"),lr_eval_string("{creditDate}"));
+//		lr_output_message("Credit card %s, %s", lr_eval_string("{creditCard}"),lr_eval_string("{creditDate}"));
 	
 		web_submit_form("reservations.pl_3", 
 			"Snapshot=t6.inf", 

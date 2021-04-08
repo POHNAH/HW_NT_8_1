@@ -15,8 +15,8 @@ vuser_init()
 		"Mode=HTML", 
 		LAST);
 	
-	lr_output_message("-----------------------------------------");
-	lr_output_message(lr_eval_string("{sessionID}"));
+//	lr_output_message("-----------------------------------------");
+//	lr_output_message(lr_eval_string("{sessionID}"));
 	
 		web_submit_form("login.pl", 
 		"Snapshot=t2.inf", 
