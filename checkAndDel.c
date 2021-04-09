@@ -2,6 +2,9 @@ checkAndDel(int allAndOnce)
 {
 	int i, count;
 	
+	tName = "8.1.05.Itinerary";
+	lr_start_transaction(tName);
+
 //	Заходим в Itinerary
 	web_reg_save_param_ex(
 	    "ParamName=flightIDs", 
@@ -24,6 +27,12 @@ checkAndDel(int allAndOnce)
 		"Snapshot=t3.inf", 
 		"Mode=HTML", 
 		LAST);
+
+	end_transaction(tName, status);
+	lr_think_time(4);
+
+	tName = "8.1.06.Del_Ticket";
+	lr_start_transaction(tName);
 
     count = atoi(lr_eval_string("{flightIDs_count}"));
 
@@ -64,6 +73,9 @@ checkAndDel(int allAndOnce)
 	    "Mode=HTTP",
 	    "Body={c_wcr}",
 	    LAST);
+
+	end_transaction(tName, status);
+	lr_think_time(4);
 
 	return 0;
 }

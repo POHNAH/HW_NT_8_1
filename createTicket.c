@@ -1,5 +1,8 @@
 createTicket()
 {	
+	tName = "8.1.01.Choice_City";
+	lr_start_transaction(tName);
+	
 	int randomNumber = rand()%2;
 
 	web_url("welcome.pl", 
@@ -11,12 +14,18 @@ createTicket()
 		"Mode=HTML", 
 		LAST);
 
+	end_transaction(tName, status);
+	lr_think_time(4);
+
 	lr_save_string(lr_eval_string("{seatPref}"),"sPref");
 //	lr_output_message(lr_eval_string("{sPref}"));
 	lr_save_string(lr_eval_string("{seatType}"),"sType");
 //	lr_output_message(lr_eval_string("{sType}"));
 	
 	if (randomNumber == 0) {
+		tName = "8.1.02.Choice_Flight";
+		lr_start_transaction(tName);
+
 		web_reg_save_param_ex(
 		    "ParamName=outFlight", 
 		    "LB/IC=name=\"outboundFlight\" value=\"",
@@ -38,6 +47,12 @@ createTicket()
 			"Name=findFlights.y", "Value=11", ENDITEM, 
 			LAST);
 		
+		end_transaction(tName, status);
+		lr_think_time(4);
+
+		tName = "8.1.03.Choice_Flight";
+		lr_start_transaction(tName);
+
 		lr_save_string(lr_eval_string(lr_paramarr_random("outFlight")),"randomTicket");
 //		lr_output_message(lr_eval_string("{randomTicket}"));
 	
@@ -49,6 +64,12 @@ createTicket()
 			"Name=reserveFlights.y", "Value=10", ENDITEM, 
 			LAST);
 	
+		end_transaction(tName, status);
+		lr_think_time(4);
+
+		tName = "8.1.04.End_Booking";
+		lr_start_transaction(tName);
+
 		lr_save_string(lr_eval_string("{fName}"),"firstName");
 //		lr_output_message(lr_eval_string("{firstName}"));
 		lr_save_string(lr_eval_string("{sName}"),"secondName");
@@ -75,8 +96,14 @@ createTicket()
 			"Name=buyFlights.y", "Value=14", ENDITEM, 
 			LAST);
 	
+		end_transaction(tName, status);
+		lr_think_time(4);
+
 	}
 	else {
+		tName = "8.1.02.Choice_Flight";
+		lr_start_transaction(tName);
+
 		web_reg_save_param_ex(
 		    "ParamName=outFlight", 
 		    "LB/IC=name=\"outboundFlight\" value=\"",
@@ -104,6 +131,12 @@ createTicket()
 			"Name=findFlights.y", "Value=11", ENDITEM, 
 			LAST);
 		
+		end_transaction(tName, status);
+		lr_think_time(4);
+
+		tName = "8.1.03.Choice_Flight";
+		lr_start_transaction(tName);
+
 		lr_save_string(lr_eval_string(lr_paramarr_random("outFlight")),"randomTicket1");
 //		lr_output_message(lr_eval_string("{randomTicket1}"));
 		lr_save_string(lr_eval_string(lr_paramarr_random("returnFlight")),"randomTicket2");
@@ -118,6 +151,12 @@ createTicket()
 			"Name=reserveFlights.y", "Value=10", ENDITEM, 
 			LAST);
 	
+		end_transaction(tName, status);
+		lr_think_time(4);
+
+		tName = "8.1.04.End_Booking";
+		lr_start_transaction(tName);
+
 		lr_save_string(lr_eval_string("{fName}"),"firstName");
 //		lr_output_message(lr_eval_string("{firstName}"));
 		lr_save_string(lr_eval_string("{sName}"),"secondName");
@@ -143,6 +182,10 @@ createTicket()
 			"Name=buyFlights.x", "Value=49", ENDITEM, 
 			"Name=buyFlights.y", "Value=14", ENDITEM, 
 			LAST);
+		
+		end_transaction(tName, status);
+		lr_think_time(4);
+
 	}
 	
 	return 0;
