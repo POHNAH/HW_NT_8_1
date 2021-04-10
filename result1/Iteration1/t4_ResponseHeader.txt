@@ -1,9 +1,8 @@
-HTTP/1.1 200 OK
-Date: Thu, 08 Apr 2021 10:19:15 GMT
-Server: Apache/2.2.21 (Win32)
-Expires: Wed, 07 Apr 2021 10:19:15 GMT
-Keep-Alive: timeout=5, max=92
-Connection: Keep-Alive
-Transfer-Encoding: chunked
-Content-Type: text/html; charset=ISO-8859-1
+HTTP/1.1 204 No Content
+Content-Type: application/json
+Request-Id: 8d8bceda-999a-11eb-8474-0024beb34ed5
+X-Influxdb-Build: OSS
+X-Influxdb-Version: 1.8.4
+X-Request-Id: 8d8bceda-999a-11eb-8474-0024beb34ed5
+Date: Sat, 10 Apr 2021 01:17:44 GMT
 

@@ -1,4 +1,1 @@
-"firstName=Ivan&lastName=Sidorov&address1=Akademicheskaya&address2=3&pass1=Ivan+Sidorov&creditC"
-"ard=2222&expDate=01%2F22&saveCC=on&oldCCOption=on&numPassengers=1&seatType=First&seatPref=Wind"
-"ow&outboundFlight=601%3B338%3B08%2F04%2F2021&advanceDiscount=0&returnFlight=&JSFormSubmit=off&"
-".cgifields=saveCC&buyFlights.x=49&buyFlights.y=14"
+"business_metrics,name=8.1.02.Choice_Flight,status=0 response_time=1051"

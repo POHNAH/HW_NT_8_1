@@ -3,48 +3,121 @@
         "actionName": "logic",
         "steps": [
             {
-                "stepId": "STEP1",
-                "stepName": "Url: webtours",
-                "infFile": "t1.inf",
-                "time": 1617877154411
-            },
-            {
-                "stepId": "STEP2",
-                "stepName": "Submit Form: login.pl",
-                "infFile": "t2.inf",
-                "time": 1617877154821
-            },
-            {
                 "stepId": "STEP3",
                 "stepName": "Url: welcome.pl",
                 "infFile": "t3.inf",
-                "time": 1617877155366
+                "time": 1618017464335
             },
             {
                 "stepId": "STEP4",
-                "stepName": "Submit Form: reservations.pl",
+                "stepName": "Custom Request: InfluxDB",
                 "infFile": "t4.inf",
-                "time": 1617877155772
+                "time": 1618017464527
             },
             {
                 "stepId": "STEP5",
-                "stepName": "Submit Form: reservations.pl_2",
+                "stepName": "Submit Data: reservations.pl",
                 "infFile": "t5.inf",
-                "time": 1617877156113
+                "time": 1618017465590
             },
             {
                 "stepId": "STEP6",
-                "stepName": "Submit Form: reservations.pl_3",
+                "stepName": "Custom Request: InfluxDB",
                 "infFile": "t6.inf",
-                "time": 1617877156547
+                "time": 1618017465934
             },
             {
                 "stepId": "STEP7",
-                "stepName": "Url: Itinerary Button",
+                "stepName": "Submit Data: reservations.pl_2",
                 "infFile": "t7.inf",
-                "time": 1617877157476
+                "time": 1618017466638
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t8.inf",
+                "time": 1618017466916
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Submit Data: reservations.pl_3",
+                "infFile": "t9.inf",
+                "time": 1618017468058
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t10.inf",
+                "time": 1618017468258
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: Itinerary Button",
+                "infFile": "t11.inf",
+                "time": 1618017471067
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t12.inf",
+                "time": 1618017471118
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Custom Request: itinerary.pl_2",
+                "infFile": "t13.inf",
+                "time": 1618017477392
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t14.inf",
+                "time": 1618017477417
             }
         ],
-        "transactions": []
+        "transactions": [
+            {
+                "transactionName": "8.1.01.Choice_City",
+                "rawStartTime": 1618017462836,
+                "rawEndTime": 1618017464335,
+                "thinkTime": 0.0,
+                "wastedTime": 0.016189098358154298
+            },
+            {
+                "transactionName": "8.1.02.Choice_Flight",
+                "rawStartTime": 1618017464528,
+                "rawEndTime": 1618017465592,
+                "thinkTime": 0.0,
+                "wastedTime": 0.011739015579223633
+            },
+            {
+                "transactionName": "8.1.03.Choice_Flight",
+                "rawStartTime": 1618017465934,
+                "rawEndTime": 1618017466639,
+                "thinkTime": 0.0,
+                "wastedTime": 0.012969017028808594
+            },
+            {
+                "transactionName": "8.1.04.End_Booking",
+                "rawStartTime": 1618017466916,
+                "rawEndTime": 1618017468063,
+                "thinkTime": 0.0,
+                "wastedTime": 0.011971473693847657
+            },
+            {
+                "transactionName": "8.1.05.Itinerary",
+                "rawStartTime": 1618017468262,
+                "rawEndTime": 1618017471088,
+                "thinkTime": 0.0,
+                "wastedTime": 1.0412113666534424
+            },
+            {
+                "transactionName": "8.1.06.Del_Ticket",
+                "rawStartTime": 1618017471119,
+                "rawEndTime": 1618017477393,
+                "thinkTime": 0.0,
+                "wastedTime": 0.5127618312835693
+            }
+        ]
     }
 ]

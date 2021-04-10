@@ -42,8 +42,18 @@
     <FileEntry Name="HW_NT_8_1.prm.bak" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv2W2.773.log" Filter="1" />
+    <FileEntry Name="mdrv437.95.log" Filter="1" />
+    <FileEntry Name="mdrv6Tv.83.log" Filter="1" />
     <FileEntry Name="mdrva7W.541.log" Filter="1" />
+    <FileEntry Name="mdrvaZI.493.log" Filter="1" />
+    <FileEntry Name="mdrvCkr.557.log" Filter="1" />
+    <FileEntry Name="mdrvEeH.549.log" Filter="1" />
     <FileEntry Name="mdrvfu6.841.log" Filter="1" />
+    <FileEntry Name="mdrvLnW.261.log" Filter="1" />
+    <FileEntry Name="mdrvNJy.527.log" Filter="1" />
+    <FileEntry Name="mdrvppb.629.log" Filter="1" />
+    <FileEntry Name="mdrvpxZ.341.log" Filter="1" />
     <FileEntry Name="mdrvR67.121.log" Filter="1" />
     <FileEntry Name="mdrvUFg.813.log" Filter="1" />
     <FileEntry Name="mdrvzo6.555.log" Filter="1" />

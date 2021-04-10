@@ -1,3 +1,1 @@
-"advanceDiscount=0&depart=San+Francisco&departDate=08%2F04%2F2021&arrive=Denver&returnDate=16%2"
-"F04%2F2021&numPassengers=1&seatPref=Window&seatType=First&.cgifields=roundtrip&.cgifields=seat"
-"Type&.cgifields=seatPref&findFlights.x=64&findFlights.y=11"
+"business_metrics,name=8.1.01.Choice_City,status=0 response_time=1482"

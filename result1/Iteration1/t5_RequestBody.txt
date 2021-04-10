@@ -1,2 +1,2 @@
-"outboundFlight=601%3B338%3B08%2F04%2F2021&numPassengers=1&advanceDiscount=0&seatType=First&sea"
-"tPref=Window&reserveFlights.x=3&reserveFlights.y=10"
+"depart=Frankfurt&departDate=10%2F04%2F2021&arrive=Paris&returnDate=20%2F04%2F2021&numPassenger"
+"s=1&roundtrip=on&seatPref=Aisle&seatType=Coach&findFlights.x=64&findFlights.y=11"

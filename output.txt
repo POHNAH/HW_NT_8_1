@@ -1,10 +1,1 @@
-vuser_init.c(18): -----------------------------------------
-vuser_init.c(19): 131055.257432159zHtVVftpiAtVzzzHtAttzpQciicf
-createTicket.c(15): Window
-createTicket.c(17): First
-createTicket.c(42): 601;338;08/04/2021
-createTicket.c(53): Ivan
-createTicket.c(55): Sidorov
-createTicket.c(58): Adress Akademicheskaya, 3
-createTicket.c(61): Credit card 2222, 01/22
 Vuser Terminated.
