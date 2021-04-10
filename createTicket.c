@@ -5,7 +5,7 @@ createTicket()
 	
 	int randomNumber = rand()%2;
 
-	web_url("welcome.pl", 
+	status = web_url("welcome.pl", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
 		"Resource=0", 
 		"RecContentType=text/html", 
@@ -32,7 +32,7 @@ createTicket()
 		    "RB/IC=\"",
 		    "Ordinal=all");
 		
-		web_submit_form("reservations.pl", 
+		status = web_submit_form("reservations.pl", 
 			"Snapshot=t4.inf", 
 			ITEMDATA, 
 			"Name=depart", "Value={city}", ENDITEM, 
@@ -56,7 +56,7 @@ createTicket()
 		lr_save_string(lr_eval_string(lr_paramarr_random("outFlight")),"randomTicket");
 //		lr_output_message(lr_eval_string("{randomTicket}"));
 	
-		web_submit_form("reservations.pl_2", 
+		status = web_submit_form("reservations.pl_2", 
 			"Snapshot=t5.inf", 
 			ITEMDATA, 
 			"Name=outboundFlight", "Value={randomTicket}", ENDITEM, 
@@ -81,7 +81,7 @@ createTicket()
 		lr_save_string(lr_eval_string("{cDate}"),"creditDate");
 //		lr_output_message("Credit card %s, %s", lr_eval_string("{creditCard}"),lr_eval_string("{creditDate}"));
 	
-		web_submit_form("reservations.pl_3", 
+		status = web_submit_form("reservations.pl_3", 
 			"Snapshot=t6.inf", 
 			ITEMDATA, 
 			"Name=firstName", "Value={firstName}", ENDITEM, 
@@ -116,7 +116,7 @@ createTicket()
 		    "RB/IC=\"",
 		    "Ordinal=all");
 		
-		web_submit_form("reservations.pl", 
+		status = web_submit_form("reservations.pl", 
 			"Snapshot=t4.inf", 
 			ITEMDATA, 
 			"Name=depart", "Value={city}", ENDITEM, 
@@ -142,7 +142,7 @@ createTicket()
 		lr_save_string(lr_eval_string(lr_paramarr_random("returnFlight")),"randomTicket2");
 //		lr_output_message(lr_eval_string("{randomTicket2}"));
 	
-		web_submit_form("reservations.pl_2", 
+		status = web_submit_form("reservations.pl_2", 
 			"Snapshot=t5.inf", 
 			ITEMDATA, 
 			"Name=outboundFlight", "Value={randomTicket1}", ENDITEM, 
@@ -168,7 +168,7 @@ createTicket()
 		lr_save_string(lr_eval_string("{cDate}"),"creditDate");
 //		lr_output_message("Credit card %s, %s", lr_eval_string("{creditCard}"),lr_eval_string("{creditDate}"));
 	
-		web_submit_form("reservations.pl_3", 
+		status = web_submit_form("reservations.pl_3", 
 			"Snapshot=t6.inf", 
 			ITEMDATA, 
 			"Name=firstName", "Value={firstName}", ENDITEM, 

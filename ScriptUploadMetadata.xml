@@ -42,6 +42,11 @@
     <FileEntry Name="HW_NT_8_1.prm.bak" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrva7W.541.log" Filter="1" />
+    <FileEntry Name="mdrvfu6.841.log" Filter="1" />
+    <FileEntry Name="mdrvR67.121.log" Filter="1" />
+    <FileEntry Name="mdrvUFg.813.log" Filter="1" />
+    <FileEntry Name="mdrvzo6.555.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />

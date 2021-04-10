@@ -18,7 +18,7 @@ checkAndDel(int allAndOnce)
 	    "ord=all",
 	    LAST);
 		
-	web_url("Itinerary Button", 
+	status = web_url("Itinerary Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
 		"TargetFrame=body", 
 		"Resource=0", 
@@ -63,7 +63,7 @@ checkAndDel(int allAndOnce)
 	}
 	
 		
-    web_custom_request("itinerary.pl_2",
+    status = web_custom_request("itinerary.pl_2",
 	    "URL=http://localhost:1080/cgi-bin/itinerary.pl",
 	    "Method=POST",
 	    "Resource=0",
